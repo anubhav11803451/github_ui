@@ -7,6 +7,7 @@ class Homescreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
+        // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
         // leading: Image.asset('assets/logo/github.png'),
         title: Text('GitHub', style: GoogleFonts.baloo(color: Colors.white)),
         centerTitle: true,
@@ -23,7 +24,7 @@ class Homescreen extends StatelessWidget {
         child: const Icon(Icons.add),
         backgroundColor: Colors.black,
         elevation: 8,
-        tooltip: '',
+        tooltip: 'New Issue',
         onPressed: () {},
       ),
       bottomNavigationBar: BottomAppBar(
