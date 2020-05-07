@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gitub_ui/screens/home.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:gitub_ui/pages/signup.dart';
@@ -67,28 +68,33 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _submitButton() {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      padding: EdgeInsets.symmetric(vertical: 15),
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(5)),
-        boxShadow: <BoxShadow>[
-          BoxShadow(
-              color: Colors.grey.shade200,
-              offset: Offset(2, 4),
-              blurRadius: 5,
-              spreadRadius: 2)
-        ],
-        gradient: LinearGradient(
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-          colors: [Colors.black87, Colors.grey, Colors.black87],
+    return InkWell(
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) =>Homescreen()));
+      },
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        padding: EdgeInsets.symmetric(vertical: 15),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(5)),
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Colors.grey.shade200,
+                offset: Offset(2, 4),
+                blurRadius: 5,
+                spreadRadius: 2)
+          ],
+          gradient: LinearGradient(
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+            colors: [Colors.black87, Colors.grey, Colors.black87],
+          ),
         ),
-      ),
-      child: Text(
-        'Login',
-        style: GoogleFonts.portLligatSans(fontSize: 20, color: Colors.white),
+        child: Text(
+          'Login',
+          style: GoogleFonts.portLligatSans(fontSize: 20, color: Colors.white),
+        ),
       ),
     );
   }
