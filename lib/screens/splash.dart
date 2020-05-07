@@ -8,7 +8,7 @@ class splashscreen extends StatelessWidget {
     return SplashScreen(
       seconds: 4,
       // navigateAfterSeconds: new login(),
-      image: new Image.asset('assets/logo/github.png'),
+      image: new Image.asset('assets/logo/github1.png'),
       loadingText: Text(
         'Hang In There .. !!',
         style: GoogleFonts.handlee(
@@ -17,7 +17,7 @@ class splashscreen extends StatelessWidget {
             color: Colors.black),
       ),
       backgroundColor: Colors.white,
-      photoSize: 80,
+      photoSize: 55,
     );
   }
 }
