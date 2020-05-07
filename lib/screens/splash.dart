@@ -18,6 +18,7 @@ class splashscreen extends StatelessWidget {
             color: Colors.black),
       ),
       backgroundColor: Colors.white,
+      loaderColor: Colors.black,
       photoSize: 55,
     );
   }
