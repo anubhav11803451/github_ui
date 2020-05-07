@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gitub_ui/screens/splash.dart';
 
 void main() {
   runApp(MyApp());
