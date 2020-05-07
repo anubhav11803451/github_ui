@@ -7,7 +7,7 @@ class splashscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 4,
-      navigateAfterSeconds: new Introscreen(),
+      // navigateAfterSeconds: new login(),
       image: new Image.asset('assets/logo/github.png'),
     );
   }
