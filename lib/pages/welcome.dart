@@ -128,17 +128,11 @@ class _WelcomePageState extends State<WelcomePage> {
                   children: <Widget>[
                     SizedBox(height: 100,),
                     _icon(),
-                    SizedBox(
-                      height: 50,
-                    ),
+                    SizedBox(height: 50,),
                     _submitButton(),
-                    SizedBox(
-                      height: 30,
-                    ),
+                    SizedBox( height: 30,),
                     _signUpButton(),
-                    SizedBox(
-                      height: 30,
-                    ),
+                    SizedBox(height: 30,),
                     _label(),
                   ],
                 ),
@@ -152,6 +146,7 @@ class _WelcomePageState extends State<WelcomePage> {
           ),
         ),
       ),
+      backgroundColor: Colors.white,
     );
   }
 }
