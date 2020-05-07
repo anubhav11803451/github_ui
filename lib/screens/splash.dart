@@ -9,6 +9,15 @@ class splashscreen extends StatelessWidget {
       seconds: 4,
       // navigateAfterSeconds: new login(),
       image: new Image.asset('assets/logo/github.png'),
+      loadingText: Text(
+        'Hang In There .. !!',
+        style: GoogleFonts.handlee(
+            fontSize: 15,
+            fontWeight: FontWeight.bold,
+            color: Colors.black),
+      ),
+      backgroundColor: Colors.white,
+      photoSize: 80,
     );
   }
 }
