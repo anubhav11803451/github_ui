@@ -11,8 +11,7 @@ class Homescreen extends StatelessWidget {
         title: Text('GitHub', style: GoogleFonts.baloo(color: Colors.white)),
         centerTitle: true,
       ),
-      drawer: Drawer(
-      ),
+      drawer: Drawer(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
