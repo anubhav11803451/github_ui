@@ -4,7 +4,7 @@ import 'package:gitub_ui/pages/welcome.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class splashscreen extends StatelessWidget {
+class Splashscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
