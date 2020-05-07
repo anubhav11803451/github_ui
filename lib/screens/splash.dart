@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gitub_ui/pages/welcome.dart';
-// import 'package:gitub_ui/screens/home.dart';
-import 'package:splashscreen/splashscreen.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'package:gitub_ui/pages/welcome.dart';
+import 'package:splashscreen/splashscreen.dart';
 
 class Splashscreen extends StatelessWidget {
   @override
