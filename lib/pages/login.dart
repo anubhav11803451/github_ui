@@ -178,7 +178,7 @@ class _LoginPageState extends State<LoginPage> {
         children: [
           TextSpan(
             text: 'Hub',
-            style: TextStyle(color: Colors.black, fontSize: 30),
+            style: GoogleFonts.portLligatSans(color: Colors.black, fontSize: 30),
           ),
         ],
       ),
