@@ -6,16 +6,12 @@ class Homescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        elevation: 0,
+        backgroundColor: Colors.black54,
         title: Text('GitHub', style: GoogleFonts.baloo(color: Colors.white)),
         centerTitle: true,
       ),
       drawer: Drawer(
-        child: Container(
-          padding: EdgeInsets.all(50),
-          color: Colors.black38,
-          child: Text('data'),
-          ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
@@ -26,7 +22,8 @@ class Homescreen extends StatelessWidget {
         onPressed: () {},
       ),
       bottomNavigationBar: BottomAppBar(
-        color: Colors.black,
+        elevation: 5.5,
+        color: Colors.white,
         shape: CircularNotchedRectangle(),
         notchMargin: 4.0,
         child: new Row(
@@ -36,14 +33,14 @@ class Homescreen extends StatelessWidget {
             IconButton(
               icon: Icon(
                 Icons.search,
-                color: Colors.white,
+                color: Colors.black,
               ),
               onPressed: () {},
             ),
             IconButton(
               icon: Icon(
                 Icons.account_circle,
-                color: Colors.white,
+                color: Colors.black,
               ),
               onPressed: () {},
             ),
