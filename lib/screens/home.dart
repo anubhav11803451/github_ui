@@ -7,8 +7,6 @@ class Homescreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
-        // leading: Image.asset('assets/logo/github.png'),
         title: Text('GitHub', style: GoogleFonts.baloo(color: Colors.white)),
         centerTitle: true,
       ),
