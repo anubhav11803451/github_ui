@@ -175,13 +175,9 @@ class _SignUpPageState extends State<SignUpPage> {
                       child: SizedBox(),
                     ),
                     _title(),
-                    SizedBox(
-                      height: 50,
-                    ),
+                    SizedBox(height: 50,),
                     _emailPasswordWidget(),
-                    SizedBox(
-                      height: 20,
-                    ),
+                    SizedBox(height: 20,),
                     _submitButton(),
                     Expanded(
                       flex: 2,
@@ -196,9 +192,9 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               Positioned(top: 40, left: 0, child: _backButton()),
               Positioned(
-                  top: -MediaQuery.of(context).size.height * .15,
-                  right: -MediaQuery.of(context).size.width * .4,
-                  child: BezierContainer())
+                top: -MediaQuery.of(context).size.height * .15,
+                right: -MediaQuery.of(context).size.width * .4,
+                child: BezierContainer())
             ],
           ),
         ),
