@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gitub_ui/pages/widgets/bezier_container.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gitub_ui/pages/login.dart';
 import 'package:gitub_ui/pages/signup.dart';
@@ -24,19 +25,23 @@ class _WelcomePageState extends State<WelcomePage> {
         padding: EdgeInsets.symmetric(vertical: 14),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(25)),
-            boxShadow: <BoxShadow>[
-              BoxShadow(
-                  color: Colors.black.withAlpha(100),
-                  offset: Offset(0, 4),
-                  blurRadius: 8,
-                  spreadRadius: 2)
-            ],
-            color: Colors.black,
-            ),
+          borderRadius: BorderRadius.all(Radius.circular(25)),
+          boxShadow: <BoxShadow>[
+          BoxShadow(
+              color: Colors.grey.shade200,
+              offset: Offset(2, 4),
+              blurRadius: 5,
+              spreadRadius: 2)
+        ],
+        gradient: LinearGradient(
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+          colors: [Colors.grey, Colors.black],
+        ),
+      ),
         child: Text(
           'Login',
-          style: TextStyle(fontSize: 20, color: Colors.white),
+          style: GoogleFonts.portLligatSans(fontSize: 20, color: Colors.white),
         ),
       ),
     );
@@ -53,19 +58,23 @@ class _WelcomePageState extends State<WelcomePage> {
         padding: EdgeInsets.symmetric(vertical: 13),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(25)),
-          boxShadow: <BoxShadow>[
-              BoxShadow(
-                  color: Colors.black.withAlpha(100),
-                  offset: Offset(0, 4),
-                  blurRadius: 8,
-                  spreadRadius: 2)
-            ],
-            color: Colors.black
+            borderRadius: BorderRadius.all(Radius.circular(25)),
+            boxShadow: <BoxShadow>[
+          BoxShadow(
+              color: Colors.grey.shade200,
+              offset: Offset(2, 4),
+              blurRadius: 5,
+              spreadRadius: 2)
+        ],
+        gradient: LinearGradient(
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+          colors: [Colors.black, Colors.grey],
         ),
+      ),
         child: Text(
           'Register now',
-          style: TextStyle(fontSize: 20, color: Colors.white),
+          style: GoogleFonts.portLligatSans(fontSize: 20, color: Colors.white),
         ),
       ),
     );
@@ -95,8 +104,11 @@ class _WelcomePageState extends State<WelcomePage> {
         ));
   }
 
-  Widget _title() {
-    return Image.asset('assets/logo/github4.png', height: 150,);
+  Widget _icon() {
+    return Image.asset(
+      'assets/logo/github.png',
+      height: 120,
+    );
   }
 
   @override
@@ -104,30 +116,38 @@ class _WelcomePageState extends State<WelcomePage> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 20),
+          padding: EdgeInsets.symmetric(horizontal: 0),
           height: MediaQuery.of(context).size.height,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(5)),
-            color: Colors.white
-          ),
-          // color: Colors.black,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: Stack(
             children: <Widget>[
-              _title(),
-              SizedBox(
-                height: 80,
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 40),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    SizedBox(height: 100,),
+                    _icon(),
+                    SizedBox(
+                      height: 50,
+                    ),
+                    _submitButton(),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    _signUpButton(),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    _label(),
+                  ],
+                ),
               ),
-              _submitButton(),
-              SizedBox(
-                height: 38,
+              Positioned(
+                top: -MediaQuery.of(context).size.height * .15,
+                right: -MediaQuery.of(context).size.width * .4,
+                child: BezierContainer(),
               ),
-              _signUpButton(),
-              SizedBox(
-                height: 40,
-              ),
-              _label()
             ],
           ),
         ),
