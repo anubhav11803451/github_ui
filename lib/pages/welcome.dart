@@ -36,12 +36,12 @@ class _WelcomePageState extends State<WelcomePage> {
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
-          colors: [Colors.grey, Colors.black],
+          colors: [Colors.black54, Colors.black],
         ),
       ),
         child: Text(
           'Login',
-          style: GoogleFonts.portLligatSans(fontSize: 20, color: Colors.white),
+          style: GoogleFonts.openSans(fontSize: 19, color: Colors.white)
         ),
       ),
     );
@@ -69,12 +69,12 @@ class _WelcomePageState extends State<WelcomePage> {
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
-          colors: [Colors.black, Colors.grey],
+          colors: [Colors.black, Colors.black54],
         ),
       ),
         child: Text(
           'Register now',
-          style: GoogleFonts.portLligatSans(fontSize: 20, color: Colors.white),
+          style: GoogleFonts.openSans(fontSize: 19, color: Colors.white),
         ),
       ),
     );
@@ -94,11 +94,11 @@ class _WelcomePageState extends State<WelcomePage> {
             ),
             Text(
               'Touch ID',
-              style: TextStyle(
-                color: Colors.black,
+              style: GoogleFonts.openSans(
                 fontSize: 12,
+                color: Colors.black,
                 decoration: TextDecoration.underline,
-              ),
+                ),
             ),
           ],
         ));
