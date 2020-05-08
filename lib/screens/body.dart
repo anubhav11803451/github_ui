@@ -50,7 +50,7 @@ class _BodyScreen extends State<Body> with SingleTickerProviderStateMixin {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(20.0),
+              padding: EdgeInsets.only(top:30.0, left: 10),
               child: Text(
                 title,
                 style: GoogleFonts.openSans(
@@ -64,16 +64,10 @@ class _BodyScreen extends State<Body> with SingleTickerProviderStateMixin {
             ),
             Padding(
               padding: EdgeInsets.all(20.0),
-              child: Text(
-                count.toString(),
-                style: GoogleFonts.openSans(
-                  color:
-                      selectedRepoIndex == index
-                      ? Colors.white
-                      : Colors.black,
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                ),
+              child: Icon(
+                Icons.favorite_border,
+                color: Colors.white,
+                size: 15,
               ),
             ),
           ],
