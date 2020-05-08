@@ -75,16 +75,16 @@ class _LoginPageState extends State<LoginPage> {
       },
       child: Container(
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.symmetric(vertical: 15),
+        padding: EdgeInsets.symmetric(vertical: 12),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(5)),
+          borderRadius: BorderRadius.all(Radius.circular(28)),
           boxShadow: <BoxShadow>[
             BoxShadow(
-                color: Colors.grey.shade200,
-                offset: Offset(2, 4),
-                blurRadius: 5,
-                spreadRadius: 2)
+                color: Colors.black26,
+                offset: Offset(0, 2),
+                blurRadius: 4,
+                spreadRadius: 1)
           ],
           gradient: LinearGradient(
             begin: Alignment.centerLeft,
@@ -142,8 +142,8 @@ class _LoginPageState extends State<LoginPage> {
         children: <Widget>[
           Text(
             'New to GitHub ?',
-            style: GoogleFonts.openSans(
-                fontSize: 13, fontWeight: FontWeight.w600),
+            style:
+                GoogleFonts.openSans(fontSize: 13, fontWeight: FontWeight.w600),
           ),
           SizedBox(
             width: 10,
@@ -175,12 +175,23 @@ class _LoginPageState extends State<LoginPage> {
           fontSize: 30,
           fontWeight: FontWeight.w700,
           color: Color(0xff8c8c8c),
+          shadows: [
+            Shadow(
+              color: Colors.black26,
+              blurRadius: 5.0,
+              offset: Offset(0, 5.0),
+            ),
+            Shadow(
+              color: Colors.black26,
+              blurRadius: 5.0,
+              offset: Offset(0, 5.0),
+            ),
+          ],
         ),
         children: [
           TextSpan(
             text: 'Hub',
-            style:
-                GoogleFonts.openSans(color: Colors.black, fontSize: 30),
+            style: GoogleFonts.openSans(color: Colors.black, fontSize: 30),
           ),
         ],
       ),
