@@ -50,7 +50,7 @@ class _LoginPageState extends State<LoginPage> {
         children: <Widget>[
           Text(
             title,
-            style: GoogleFonts.portLligatSans(
+            style: GoogleFonts.openSans(
                 fontWeight: FontWeight.bold, fontSize: 13.5),
           ),
           SizedBox(
@@ -70,7 +70,8 @@ class _LoginPageState extends State<LoginPage> {
   Widget _submitButton() {
     return InkWell(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) =>Homescreen()));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => Homescreen()));
       },
       child: Container(
         width: MediaQuery.of(context).size.width,
@@ -88,12 +89,12 @@ class _LoginPageState extends State<LoginPage> {
           gradient: LinearGradient(
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
-            colors: [Colors.black87, Colors.grey, Colors.black87],
+            colors: [Colors.black, Colors.black54, Colors.black],
           ),
         ),
         child: Text(
           'Login',
-          style: GoogleFonts.portLligatSans(fontSize: 20, color: Colors.white),
+          style: GoogleFonts.openSans(fontSize: 20, color: Colors.white),
         ),
       ),
     );
@@ -141,7 +142,7 @@ class _LoginPageState extends State<LoginPage> {
         children: <Widget>[
           Text(
             'New to GitHub ?',
-            style: GoogleFonts.portLligatSans(
+            style: GoogleFonts.openSans(
                 fontSize: 13, fontWeight: FontWeight.w600),
           ),
           SizedBox(
@@ -154,7 +155,7 @@ class _LoginPageState extends State<LoginPage> {
             },
             child: Text(
               'Register',
-              style: GoogleFonts.portLligatSans(
+              style: GoogleFonts.openSans(
                   color: Colors.blueGrey,
                   fontSize: 13,
                   fontWeight: FontWeight.w600),
@@ -170,7 +171,7 @@ class _LoginPageState extends State<LoginPage> {
       textAlign: TextAlign.center,
       text: TextSpan(
         text: 'Git',
-        style: GoogleFonts.portLligatSans(
+        style: GoogleFonts.openSans(
           fontSize: 30,
           fontWeight: FontWeight.w700,
           color: Color(0xff8c8c8c),
@@ -178,7 +179,8 @@ class _LoginPageState extends State<LoginPage> {
         children: [
           TextSpan(
             text: 'Hub',
-            style: GoogleFonts.portLligatSans(color: Colors.black, fontSize: 30),
+            style:
+                GoogleFonts.openSans(color: Colors.black, fontSize: 30),
           ),
         ],
       ),
@@ -225,8 +227,8 @@ class _LoginPageState extends State<LoginPage> {
                       padding: EdgeInsets.symmetric(vertical: 10),
                       alignment: Alignment.centerRight,
                       child: Text('Forgot Password ?',
-                          style: GoogleFonts.portLligatSans(
-                              fontSize: 14, fontWeight: FontWeight.w500)),
+                          style: GoogleFonts.openSans(
+                              fontSize: 12, fontWeight: FontWeight.w500)),
                     ),
                     _divider(),
                     Expanded(
