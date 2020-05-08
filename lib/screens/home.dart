@@ -2,18 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:gitub_ui/screens/body.dart';
+import 'package:gitub_ui/screens/homebody.dart';
+
 
 class Homescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.black,
-        title: Text('Home', style: GoogleFonts.openSans(color: Colors.white)),
-        centerTitle: true,
-      ),
-      drawer: Drawer(),
+      // appBar: AppBar(
+      //   elevation: 0,
+      //   backgroundColor: Colors.black,
+      //   title: Text('Home', style: GoogleFonts.openSans(color: Colors.white)),
+      //   centerTitle: true,
+      // ),
+      // drawer: Drawer(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
@@ -48,8 +50,8 @@ class Homescreen extends StatelessWidget {
           ],
         ),
       ),
-      backgroundColor: Colors.white,
-      body: Body(),
+      backgroundColor: Colors.grey,
+      body: HomeBody(),
     );
   }
 }
