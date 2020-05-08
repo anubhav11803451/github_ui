@@ -47,8 +47,8 @@ class _SignUpPageState extends State<SignUpPage> {
         children: <Widget>[
           Text(
             title,
-            style: GoogleFonts.portLligatSans(
-                fontWeight: FontWeight.bold, fontSize: 15),
+            style:
+                GoogleFonts.openSans(fontWeight: FontWeight.bold, fontSize: 13.5),
           ),
           SizedBox(
             height: 10,
@@ -68,27 +68,27 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget _submitButton() {
     return Container(
       width: MediaQuery.of(context).size.width,
-      padding: EdgeInsets.symmetric(vertical: 15),
+      padding: EdgeInsets.symmetric(vertical: 12),
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(5)),
+        borderRadius: BorderRadius.all(Radius.circular(28)),
         boxShadow: <BoxShadow>[
           BoxShadow(
             color: Colors.grey.shade200,
-            offset: Offset(2, 4),
+            offset: Offset(0, 4),
             blurRadius: 5,
-            spreadRadius: 2,
+            spreadRadius: 1,
           ),
         ],
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
-          colors: [Colors.black87, Colors.grey, Colors.black87],
+          colors: [Colors.black, Colors.black54, Colors.black],
         ),
       ),
       child: Text(
         'Register Now',
-        style: GoogleFonts.portLligatSans(fontSize: 20, color: Colors.white),
+        style: GoogleFonts.openSans(fontSize: 19, color: Colors.white),
       ),
     );
   }
@@ -102,8 +102,8 @@ class _SignUpPageState extends State<SignUpPage> {
         children: <Widget>[
           Text(
             'Already have an account ?',
-            style: GoogleFonts.portLligatSans(
-                fontSize: 13, fontWeight: FontWeight.w600),
+            style:
+                GoogleFonts.openSans(fontSize: 13, fontWeight: FontWeight.w600),
           ),
           SizedBox(
             width: 10,
@@ -115,7 +115,7 @@ class _SignUpPageState extends State<SignUpPage> {
             },
             child: Text(
               'Login',
-              style: GoogleFonts.portLligatSans(
+              style: GoogleFonts.openSans(
                   color: Colors.blueGrey,
                   fontSize: 13,
                   fontWeight: FontWeight.w600),
@@ -131,16 +131,27 @@ class _SignUpPageState extends State<SignUpPage> {
       textAlign: TextAlign.center,
       text: TextSpan(
         text: 'Git',
-        style: GoogleFonts.portLligatSans(
+        style: GoogleFonts.openSans(
           fontSize: 30,
           fontWeight: FontWeight.w700,
           color: Color(0xff8c8c8c),
+          shadows: [
+            Shadow(
+              color: Colors.black26,
+              blurRadius: 5.0,
+              offset: Offset(0, 5.0),
+            ),
+            Shadow(
+              color: Colors.black26,
+              blurRadius: 5.0,
+              offset: Offset(0, 5.0),
+            ),
+          ],
         ),
         children: [
           TextSpan(
             text: 'Hub',
-            style:
-                GoogleFonts.portLligatSans(color: Colors.black, fontSize: 30),
+            style: GoogleFonts.openSans(color: Colors.black, fontSize: 30),
           ),
         ],
       ),
@@ -176,9 +187,13 @@ class _SignUpPageState extends State<SignUpPage> {
                       child: SizedBox(),
                     ),
                     _title(),
-                    SizedBox(height: 50,),
+                    SizedBox(
+                      height: 50,
+                    ),
                     _emailPasswordWidget(),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     _submitButton(),
                     Expanded(
                       flex: 2,
@@ -193,9 +208,9 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               Positioned(top: 40, left: 0, child: _backButton()),
               Positioned(
-                top: -MediaQuery.of(context).size.height * .15,
-                right: -MediaQuery.of(context).size.width * .4,
-                child: BezierContainer())
+                  top: -MediaQuery.of(context).size.height * .15,
+                  right: -MediaQuery.of(context).size.width * .4,
+                  child: BezierContainer())
             ],
           ),
         ),
