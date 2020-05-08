@@ -22,10 +22,10 @@ class _WelcomePageState extends State<WelcomePage> {
       },
       child: Container(
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.symmetric(vertical: 14),
+        padding: EdgeInsets.symmetric(vertical: 12),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(25)),
+          borderRadius: BorderRadius.all(Radius.circular(28)),
           boxShadow: <BoxShadow>[
           BoxShadow(
               color: Colors.grey.shade200,
@@ -55,10 +55,10 @@ class _WelcomePageState extends State<WelcomePage> {
       },
       child: Container(
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.symmetric(vertical: 13),
+        padding: EdgeInsets.symmetric(vertical: 12),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(25)),
+            borderRadius: BorderRadius.all(Radius.circular(28)),
             boxShadow: <BoxShadow>[
           BoxShadow(
               color: Colors.grey.shade200,
