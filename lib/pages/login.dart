@@ -94,7 +94,7 @@ class _LoginPageState extends State<LoginPage> {
         ),
         child: Text(
           'Login',
-          style: GoogleFonts.openSans(fontSize: 20, color: Colors.white),
+          style: GoogleFonts.openSans(fontSize: 19, color: Colors.white),
         ),
       ),
     );
