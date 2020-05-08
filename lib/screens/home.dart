@@ -8,7 +8,7 @@ class Homescreen extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.black,
-        title: Text('GitHub', style: GoogleFonts.baloo(color: Colors.white)),
+        title: Text('GitHub', style: GoogleFonts.openSans(color: Colors.white)),
         centerTitle: true,
       ),
       drawer: Drawer(),
