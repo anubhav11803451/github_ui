@@ -7,7 +7,7 @@ class Homescreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.black87,
         title: Text('GitHub', style: GoogleFonts.openSans(color: Colors.white)),
         centerTitle: true,
       ),
@@ -15,7 +15,7 @@ class Homescreen extends StatelessWidget {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.black87,
         elevation: 8,
         tooltip: 'New Issue',
         onPressed: () {},
