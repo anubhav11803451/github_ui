@@ -9,7 +9,7 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomAppBar(
       elevation: 1,
-      color: Colors.transparent,
+      color: Colors.black,
       shape: CircularNotchedRectangle(),
       notchMargin: 4.0,
       child: BottomNavItem(),
@@ -29,10 +29,10 @@ class BottomFloatButton extends StatelessWidget {
     return FloatingActionButton(
       child: Icon(
         Icons.home,
-        color: isFactive ? Colors.blue : Colors.black,
+        color: isFactive ? Colors.blueAccent : Colors.black,
       ),
-      backgroundColor: Colors.transparent,
-      elevation: 1,
+      backgroundColor: Colors.black,
+      elevation: 5,
       tooltip: 'Home',
       onPressed: () {},
     );
@@ -57,14 +57,16 @@ class BottomNavItem extends StatelessWidget {
           IconButton(
             icon: Icon(
               Icons.search,
-              color: isActive ? Colors.blue : Colors.black,
+              size: 30,
+              color: isActive ? Colors.blueAccent : Colors.white,
             ),
             onPressed: () {},
           ),
           IconButton(
             icon: Icon(
-              Icons.account_circle,
-              color: isActive ? Colors.blue : Colors.black,
+              Icons.person,
+              size: 30,
+              color: isActive ? Colors.blueAccent : Colors.white,
             ),
             onPressed: () {},
           ),
