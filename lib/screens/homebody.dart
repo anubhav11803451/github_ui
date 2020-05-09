@@ -13,6 +13,7 @@ class HomeBody extends StatelessWidget {
           Container(
             height: size.height * .45,
             decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
               color: Colors.black,
             ),
           ),
@@ -46,7 +47,7 @@ class HomeBody extends StatelessWidget {
                         fontSize: 20),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 40),
+                    margin: EdgeInsets.symmetric(vertical: 45),
                     padding:
                         EdgeInsets.symmetric(horizontal: 30, vertical: 2.1),
                     decoration: BoxDecoration(
@@ -103,5 +104,6 @@ class HomeBody extends StatelessWidget {
     );
   }
 }
+
 
 
