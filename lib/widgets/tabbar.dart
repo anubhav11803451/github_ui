@@ -16,34 +16,34 @@ class Tabbar extends StatelessWidget {
       controller: _tabController,
       labelColor: Colors.black,
       unselectedLabelColor: Color(0xFFAFB4C6),
-      indicatorColor: Colors.black54,
+      indicatorColor: Colors.blueAccent,
       indicatorSize: TabBarIndicatorSize.label,
       indicatorWeight: 4.0,
       isScrollable: true,
       tabs: <Widget>[
         Tab(
           child: Text(
-            'Repositories',
+            'Starred',
             style: GoogleFonts.openSans(
-              fontSize: 20.0,
+              fontSize: 16.0,
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
         Tab(
           child: Text(
-            'Pull Request',
+            'Followers',
             style: GoogleFonts.openSans(
-              fontSize: 20.0,
+              fontSize: 16.0,
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
         Tab(
           child: Text(
-            'Organizations',
+            'Following',
             style: GoogleFonts.openSans(
-              fontSize: 20.0,
+              fontSize: 16.0,
               fontWeight: FontWeight.bold,
             ),
           ),
