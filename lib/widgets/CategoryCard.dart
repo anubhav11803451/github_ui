@@ -8,7 +8,7 @@ class CategoryCard extends StatelessWidget {
   const CategoryCard({
     Key key,
     this.title,
-    this.img, 
+    this.img,
     this.press,
   }) : super(key: key);
 
