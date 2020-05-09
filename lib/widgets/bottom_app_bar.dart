@@ -56,7 +56,7 @@ class BottomNavItem extends StatelessWidget {
         children: <Widget>[
           IconButton(
             icon: Icon(
-              Icons.search,
+              Icons.notifications_none,
               size: 30,
               color: isActive ? Colors.blueAccent : Colors.white,
             ),
