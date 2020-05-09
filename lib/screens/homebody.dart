@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'package:gitub_ui/widgets/CategoryCard.dart';
+
 class HomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -44,7 +46,7 @@ class HomeBody extends StatelessWidget {
                         fontSize: 20),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 30),
+                    margin: EdgeInsets.symmetric(vertical: 40),
                     padding:
                         EdgeInsets.symmetric(horizontal: 30, vertical: 2.1),
                     decoration: BoxDecoration(
@@ -71,18 +73,22 @@ class HomeBody extends StatelessWidget {
                         CategoryCard(
                           title: 'Repositories',
                           img: 'assets/images/book1.png',
+                          press: () {},
                         ),
                         CategoryCard(
                           title: 'Pull Request',
                           img: 'assets/images/pull.png',
+                          press: () {},
                         ),
                         CategoryCard(
                           title: 'Issue',
                           img: 'assets/images/issue.png',
+                          press: () {},
                         ),
                         CategoryCard(
                           title: 'Organizations',
                           img: 'assets/images/organ.png',
+                          press: () {},
                         ),
                       ],
                     ),
@@ -98,41 +104,4 @@ class HomeBody extends StatelessWidget {
   }
 }
 
-class CategoryCard extends StatelessWidget {
-  final String title;
-  final String img;
-  const CategoryCard({
-    Key key,
-    this.title,
-    this.img,
-  }) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15),
-      ),
-      child: Column(
-        children: <Widget>[
-          // Spacer(),
-          Image.asset(
-            img,
-            fit: BoxFit.contain,
-            height: 90,
-          ),
-          Spacer(),
-          Text(
-            title,
-            textAlign: TextAlign.center,
-            style: GoogleFonts.openSans(
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
