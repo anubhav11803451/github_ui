@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gitub_ui/pages/widgets/bezier_container.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'package:gitub_ui/widgets/bezier_container.dart';
 import 'package:gitub_ui/pages/login.dart';
 import 'package:gitub_ui/pages/signup.dart';
 
