@@ -1,4 +1,4 @@
-# GitHub Mobile App UI
+# GitHub Mobile App (Redesigned UI) 
 
 A new Flutter project.
 
