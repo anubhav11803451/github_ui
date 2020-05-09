@@ -41,7 +41,7 @@ class CategoryCard extends StatelessWidget {
                   Image.asset(
                     img,
                     fit: BoxFit.contain,
-                    height: 90,
+                    height: 80,
                   ),
                   Spacer(),
                   Text(
