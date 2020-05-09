@@ -4,18 +4,18 @@ import 'package:google_fonts/google_fonts.dart';
 class Tabcard extends StatelessWidget {
   const Tabcard({
     Key key,
-    @required String timeFormatter,
-    @required String dateFormatter,
+    // @required String timeFormatter,
+    // @required String dateFormatter,
     @required String head,
     @required String sub,
-  })  : _timeFormatter = timeFormatter,
-        _dateFormatter = dateFormatter,
-        title = head,
+  })  : title = head,
         content = sub,
+        // _timeFormatter = timeFormatter,
+        // _dateFormatter = dateFormatter,
         super(key: key);
 
-  final _timeFormatter;
-  final _dateFormatter;
+  // final _timeFormatter; //TODO refrence
+  // final _dateFormatter;
   final title;
   final content;
 
@@ -41,14 +41,15 @@ class Tabcard extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              Text(
-                _timeFormatter,
-                style: GoogleFonts.openSans(
-                  color: Color(0xFFAFB4C6),
-                  fontSize: 13.0,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
+              // TODO Change its position and replace it with star count.
+              // Text(
+              //   _timeFormatter,
+              //   style: GoogleFonts.openSans(
+              //     color: Color(0xFFAFB4C6),
+              //     fontSize: 13.0,
+              //     fontWeight: FontWeight.w500,
+              //   ),
+              // ),
             ],
           ),
           SizedBox(height: 15.0),
@@ -64,14 +65,15 @@ class Tabcard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
-              Text(
-                _dateFormatter,
-                style: GoogleFonts.openSans(
-                  color: Color(0xFFAFB4C6),
-                  fontSize: 12.0,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
+              // TODO Change it to platfom eg: Dart, python
+              // Text(
+              //   _dateFormatter,
+              //   style: GoogleFonts.openSans(
+              //     color: Color(0xFFAFB4C6),
+              //     fontSize: 12.0,
+              //     fontWeight: FontWeight.w500,
+              //   ),
+              // ),
             ],
           ),
         ],
