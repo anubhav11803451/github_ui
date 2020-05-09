@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:gitub_ui/pages/profile.dart';
+
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
     Key key,
@@ -68,7 +70,10 @@ class BottomNavItem extends StatelessWidget {
               size: 30,
               color: isActive ? Colors.blueAccent : Colors.white,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ProfileBody()));
+            },
           ),
         ],
       ),
