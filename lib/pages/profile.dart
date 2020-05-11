@@ -106,7 +106,7 @@ class _ProfileBodyState extends State<ProfileBody>
               itemCount: categories.length + 1,
               itemBuilder: (BuildContext context, int index) {
                 if (index == 0) {
-                  return SizedBox(width: 8.0);
+                  return SizedBox(width: 5.0);
                 }
                 return RepoCard(
                   index - 1,
