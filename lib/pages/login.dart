@@ -67,7 +67,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget _submitButton() {
+  Widget _loginButton() {
     return InkWell(
       onTap: () {
         Navigator.push(
@@ -233,7 +233,7 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(
                       height: 20,
                     ),
-                    _submitButton(),
+                    _loginButton(),
                     Container(
                       padding: EdgeInsets.symmetric(vertical: 10),
                       alignment: Alignment.centerRight,
