@@ -24,9 +24,9 @@ class _RepoCardState extends State<RepoCard> {
         });
       },
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
+        margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 5.0),
         height: 130.0,
-        width: 175.0,
+        width: 170.0,
         decoration: BoxDecoration(
           color: Colors.black,
           borderRadius: BorderRadius.circular(20.0),
@@ -43,7 +43,7 @@ class _RepoCardState extends State<RepoCard> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.only(top: 5.0, left: 15),
+              padding: EdgeInsets.only(top: 10.0, left: 15, right: 15),
               child: Text(
                 widget.title,
                 style: GoogleFonts.openSans(
