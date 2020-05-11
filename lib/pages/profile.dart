@@ -100,7 +100,7 @@ class _ProfileBodyState extends State<ProfileBody>
           SizedBox(height: 0.0),
           Container(
             height: 130.0,
-            padding: EdgeInsets.only(left: 3.5, right: 3.5),
+            padding: EdgeInsets.only(left: 6, right: 5),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: categories.length + 1,
