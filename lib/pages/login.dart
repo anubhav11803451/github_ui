@@ -173,25 +173,29 @@ class _LoginPageState extends State<LoginPage> {
         text: 'Git',
         style: GoogleFonts.openSans(
           fontSize: 30,
-          fontWeight: FontWeight.w700,
-          color: Color(0xff8c8c8c),
+          fontWeight: FontWeight.w600,
+          color: Colors.black,
           shadows: [
             Shadow(
               color: Colors.black26,
-              blurRadius: 5.0,
-              offset: Offset(0, 5.0),
+              blurRadius: 4.0,
+              offset: Offset(0, 4.0),
             ),
             Shadow(
               color: Colors.black26,
-              blurRadius: 5.0,
-              offset: Offset(0, 5.0),
+              blurRadius: 4.0,
+              offset: Offset(0, 4.0),
             ),
           ],
         ),
         children: [
           TextSpan(
             text: 'Hub',
-            style: GoogleFonts.openSans(color: Colors.black, fontSize: 30),
+            style: GoogleFonts.openSans(
+              color: Colors.black,
+              fontSize: 30,
+              fontWeight: FontWeight.w600
+              ),
           ),
         ],
       ),
