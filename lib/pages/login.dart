@@ -81,10 +81,11 @@ class _LoginPageState extends State<LoginPage> {
           borderRadius: BorderRadius.all(Radius.circular(28)),
           boxShadow: <BoxShadow>[
             BoxShadow(
-                color: Colors.black26,
-                offset: Offset(0, 2),
-                blurRadius: 4,
-                spreadRadius: 1)
+                color: Colors.black38,
+                offset: Offset(0, 7),
+                blurRadius: 8,
+                spreadRadius: -1
+            ),
           ],
           gradient: LinearGradient(
             begin: Alignment.centerLeft,
