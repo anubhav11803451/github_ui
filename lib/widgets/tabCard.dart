@@ -25,7 +25,7 @@ class Tabcard extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 30.0),
       padding: EdgeInsets.all(30.0),
       decoration: BoxDecoration(
-        color: Color(0xFFF5F7FB),
+        color: Colors.black,
         borderRadius: BorderRadius.circular(30.0),
       ),
       child: Column(
@@ -36,7 +36,7 @@ class Tabcard extends StatelessWidget {
               Text(
                 title,
                 style: GoogleFonts.openSans(
-                  color: Colors.black,
+                  color: Colors.white,
                   fontSize: 16.0,
                   fontWeight: FontWeight.w600,
                 ),
@@ -56,7 +56,7 @@ class Tabcard extends StatelessWidget {
           Text(
             content,
             style: GoogleFonts.openSans(
-              color: Colors.black,
+              color: Colors.white,
               fontSize: 14.0,
               fontWeight: FontWeight.w500,
             ),
