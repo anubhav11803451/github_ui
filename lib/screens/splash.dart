@@ -7,12 +7,13 @@ class Splashscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      seconds: 4,
+      seconds: 3,
       navigateAfterSeconds: new WelcomePage(),
       image: new Image.asset('assets/logo/github8.png'),
       backgroundColor: Colors.white,
       loaderColor: Colors.black,
-      photoSize: 55,
+
+      photoSize: 80,
     );
   }
 }
