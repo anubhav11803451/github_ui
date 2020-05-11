@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 // import 'package:intl/intl.dart';
 
@@ -99,6 +100,7 @@ class _ProfileBodyState extends State<ProfileBody>
           SizedBox(height: 0.0),
           Container(
             height: 130.0,
+            padding: EdgeInsets.only(left: 3.5, right: 3.5),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: categories.length + 1,
@@ -116,9 +118,10 @@ class _ProfileBodyState extends State<ProfileBody>
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 21.0),
-            child: Tabbar(tabController: _tabController),
+            child: Tabbar(tabController: _tabController), //TabBar is called Here
           ),
           SizedBox(height: 20.0),
+
           Tabcard(
             // timeFormatter: _timeFormatter.format(repos[0].date),
             // dateFormatter: _dateFormatter.format(repos[0].date),
@@ -132,6 +135,8 @@ class _ProfileBodyState extends State<ProfileBody>
             head: repos[1].title,
             sub: repos[1].content,
           ),
+          SizedBox(height: 20,),
+          Tabcard(head: repos[2].title, sub: repos[2].content)
         ],
       ),
     );
