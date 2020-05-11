@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:gitub_ui/widgets/designed_container.dart';
 import 'package:gitub_ui/widgets/loginButton.dart';
-import 'package:gitub_ui/pages/signup.dart';
+
 
 class WelcomePage extends StatefulWidget {
   WelcomePage({Key key, this.title}) : super(key: key);
