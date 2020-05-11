@@ -133,8 +133,8 @@ class _SignUpPageState extends State<SignUpPage> {
         text: 'Git',
         style: GoogleFonts.openSans(
           fontSize: 30,
-          fontWeight: FontWeight.w700,
-          color: Color(0xff8c8c8c),
+          fontWeight: FontWeight.w600,
+          color: Colors.black,
           shadows: [
             Shadow(
               color: Colors.black26,
@@ -151,7 +151,11 @@ class _SignUpPageState extends State<SignUpPage> {
         children: [
           TextSpan(
             text: 'Hub',
-            style: GoogleFonts.openSans(color: Colors.black, fontSize: 30),
+            style: GoogleFonts.openSans(
+              color: Colors.black, 
+              fontSize: 30,
+              fontWeight: FontWeight.w600,
+              ),
           ),
         ],
       ),
