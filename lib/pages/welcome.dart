@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:gitub_ui/widgets/signupButton.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:gitub_ui/widgets/designed_container.dart';
-import 'package:gitub_ui/pages/login.dart';
+import 'package:gitub_ui/widgets/loginButton.dart';
 import 'package:gitub_ui/pages/signup.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -15,71 +16,6 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
-  Widget _submitButton() {
-    return InkWell(
-      onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => LoginPage()));
-      },
-      child: Container(
-        width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.symmetric(vertical: 12),
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(28)),
-          boxShadow: <BoxShadow>[
-          BoxShadow(
-              color: Colors.grey.shade200,
-              offset: Offset(2, 4),
-              blurRadius: 5,
-              spreadRadius: 2)
-        ],
-        gradient: LinearGradient(
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-          colors: [Colors.black54, Colors.black],
-        ),
-      ),
-        child: Text(
-          'Login',
-          style: GoogleFonts.openSans(fontSize: 19, color: Colors.white)
-        ),
-      ),
-    );
-  }
-
-  Widget _signUpButton() {
-    return InkWell(
-      onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => SignUpPage()));
-      },
-      child: Container(
-        width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.symmetric(vertical: 12),
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(28)),
-            boxShadow: <BoxShadow>[
-          BoxShadow(
-              color: Colors.grey.shade200,
-              offset: Offset(2, 4),
-              blurRadius: 5,
-              spreadRadius: 2)
-        ],
-        gradient: LinearGradient(
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-          colors: [Colors.black, Colors.black54],
-        ),
-      ),
-        child: Text(
-          'Register now',
-          style: GoogleFonts.openSans(fontSize: 19, color: Colors.white),
-        ),
-      ),
-    );
-  }
 
   Widget _label() {
     return Container(
@@ -130,9 +66,9 @@ class _WelcomePageState extends State<WelcomePage> {
                     SizedBox(height: 100,),
                     _icon(),
                     SizedBox(height: 50,),
-                    _submitButton(),
+                    LoginButton(),
                     SizedBox( height: 30,),
-                    _signUpButton(),
+                    SignUpButton(),
                     SizedBox(height: 30,),
                     _label(),
                   ],
