@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:gitub_ui/model/repo.dart';
 import 'package:gitub_ui/widgets/tabbar.dart';
 import 'package:gitub_ui/widgets/tabCard.dart';
+import 'package:gitub_ui/widgets/repoCard.dart';
 import 'package:gitub_ui/widgets/backbutton.dart';
 
 class ProfileBody extends StatefulWidget {
@@ -14,7 +15,7 @@ class ProfileBody extends StatefulWidget {
 
 class _ProfileBodyState extends State<ProfileBody>
     with SingleTickerProviderStateMixin {
-  int selectedRepoIndex = 0;
+
   TabController _tabController;
   // final DateFormat _dateFormatter = DateFormat('dd MMM');
   // final DateFormat _timeFormatter = DateFormat('h:mm');
@@ -25,59 +26,7 @@ class _ProfileBodyState extends State<ProfileBody>
     _tabController = TabController(initialIndex: 0, length: 3, vsync: this);
   }
 
-  Widget _repoCard(int index, String title, int count) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          selectedRepoIndex = index;
-        });
-      },
-      child: Container(
-        margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
-        height: 240.0,
-        width: 175.0,
-        decoration: BoxDecoration(
-          color: selectedRepoIndex == index ? Colors.black : Color(0xFFF5F7FB),
-          borderRadius: BorderRadius.circular(20.0),
-          boxShadow: [
-            selectedRepoIndex == index
-                ? BoxShadow(
-                    color: Colors.black26,
-                    offset: Offset(0, 5),
-                    blurRadius: 6.0)
-                : BoxShadow(color: Colors.black),
-          ],
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(top: 5.0, left: 15),
-              child: Text(
-                title,
-                style: GoogleFonts.openSans(
-                  color:
-                      selectedRepoIndex == index ? Colors.white : Colors.black,
-                  fontSize: 14.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(15.0),
-              child: Icon(
-                Icons.favorite_border,
-                color: selectedRepoIndex == index ? Colors.white : Colors.black,
-                size: 15,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -128,7 +77,7 @@ class _ProfileBodyState extends State<ProfileBody>
                 if (index == 0) {
                   return SizedBox(width: 20.0);
                 }
-                return _repoCard(
+                return RepoCard(
                   index - 1,
                   categories.keys.toList()[index - 1],
                   categories.values.toList()[index - 1],
