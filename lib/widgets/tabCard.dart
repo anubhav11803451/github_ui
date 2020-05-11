@@ -23,15 +23,16 @@ class Tabcard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 30.0),
-      padding: EdgeInsets.all(30.0),
+      padding: EdgeInsets.only(top:20, left: 20, right: 20, bottom: 30 ),
       decoration: BoxDecoration(
         color: Colors.black,
         borderRadius: BorderRadius.circular(30.0),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               Text(
                 title,
@@ -53,13 +54,18 @@ class Tabcard extends StatelessWidget {
             ],
           ),
           SizedBox(height: 15.0),
-          Text(
-            content,
-            style: GoogleFonts.openSans(
-              color: Colors.white,
-              fontSize: 14.0,
-              fontWeight: FontWeight.w500,
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                content,
+                style: GoogleFonts.openSans(
+                  color: Colors.white,
+                  fontSize: 13.0,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
