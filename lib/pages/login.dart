@@ -84,8 +84,7 @@ class _LoginPageState extends State<LoginPage> {
                 color: Colors.black38,
                 offset: Offset(0, 7),
                 blurRadius: 8,
-                spreadRadius: -1
-            ),
+                spreadRadius: -1),
           ],
           gradient: LinearGradient(
             begin: Alignment.centerLeft,
@@ -193,10 +192,10 @@ class _LoginPageState extends State<LoginPage> {
           TextSpan(
             text: 'Hub',
             style: GoogleFonts.openSans(
-              color: Colors.black,
-              fontSize: 30,
-              fontWeight: FontWeight.w600
-              ),
+              color: Colors.black, 
+              fontSize: 30, 
+              fontWeight: FontWeight.w600,
+            ),
           ),
         ],
       ),
