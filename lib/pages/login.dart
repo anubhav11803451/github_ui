@@ -3,6 +3,7 @@ import 'package:gitub_ui/screens/home.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:gitub_ui/pages/signup.dart';
+import 'package:gitub_ui/widgets/backbutton.dart';
 import 'package:gitub_ui/widgets/designed_container.dart';
 
 class LoginPage extends StatefulWidget {
@@ -15,32 +16,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  Widget _backButton() {
-    return InkWell(
-      onTap: () {
-        Navigator.pop(context);
-      },
-      child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10),
-        child: Row(
-          children: <Widget>[
-            Container(
-              padding: EdgeInsets.only(left: 0, top: 10, bottom: 10),
-              child: Icon(
-                Icons.keyboard_arrow_left,
-                color: Colors.black,
-                size: 40,
-              ),
-            ),
-            Text(
-              'Back',
-              style: TextStyle(fontSize: 13, fontWeight: FontWeight.w500),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
 
   Widget _entryField(String title, {bool isPassword = false}) {
     return Container(
@@ -257,7 +232,7 @@ class _LoginPageState extends State<LoginPage> {
                 alignment: Alignment.bottomCenter,
                 child: _createAccountLabel(),
               ),
-              Positioned(top: 40, left: 0, child: _backButton()),
+              Positioned(top: 40, left: 5, child: Backbutton()),
               Positioned(
                 top: -MediaQuery.of(context).size.height * .15,
                 right: -MediaQuery.of(context).size.width * .4,
