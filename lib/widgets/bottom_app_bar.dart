@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:gitub_ui/pages/profile.dart';
+import 'package:gitub_ui/pages/notification.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
@@ -62,7 +63,10 @@ class BottomNavItem extends StatelessWidget {
               size: 30,
               color: isActive ? Colors.blueAccent : Colors.white,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => NotificationBody()));
+            },
           ),
           IconButton(
             icon: Icon(
