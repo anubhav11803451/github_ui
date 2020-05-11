@@ -19,10 +19,11 @@ import 'package:google_fonts/google_fonts.dart';
           borderRadius: BorderRadius.all(Radius.circular(28)),
           boxShadow: <BoxShadow>[
           BoxShadow(
-              color: Colors.grey.shade200,
-              offset: Offset(2, 4),
-              blurRadius: 5,
-              spreadRadius: 2)
+            color: Colors.black38,
+            offset: Offset(0, 7),
+            blurRadius: 8,
+            spreadRadius: -1
+          ),
         ],
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
