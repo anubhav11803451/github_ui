@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gitub_ui/widgets/signupButton.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:gitub_ui/widgets/designed_container.dart';
+import 'package:gitub_ui/widgets/signupButton.dart';
 import 'package:gitub_ui/widgets/loginButton.dart';
 
 
