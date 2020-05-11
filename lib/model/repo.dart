@@ -10,7 +10,7 @@ final Map<String, int> categories = {
   'GitHub UI': 1,
   'Facial Recoginition': 2,
   'Reading App': 3,
-  'Repo4': 4,
+  'Traffic Sign Classifier': 4,
 };
 
 final List<Repos> repos = [
@@ -22,6 +22,16 @@ final List<Repos> repos = [
   Repos(
     title: 'GitHub UI',
     content: 'UI is Designed using Flutter',
+    date: DateTime(2020, 5, 5, 8, 30),
+  ),
+  Repos(
+    title: 'Reading App',
+    content: 'Simple yet beautifull ui to give you\nbest experience',
+    date: DateTime(2020, 5, 5, 8, 30),
+  ),
+  Repos(
+    title: 'Traffic Sign Classifier',
+    content: 'CNN Sequintial model used to classify the traffic sign.',
     date: DateTime(2020, 5, 5, 8, 30),
   ),
 ];
