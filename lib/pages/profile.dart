@@ -34,7 +34,7 @@ class _ProfileBodyState extends State<ProfileBody>
           SizedBox(height: 1.0),
           Backbutton(),
           Padding(
-            padding: EdgeInsets.all(0),
+            padding: EdgeInsets.all(1),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -100,13 +100,13 @@ class _ProfileBodyState extends State<ProfileBody>
           SizedBox(height: 0.0),
           Container(
             height: 130.0,
-            padding: EdgeInsets.only(left: 6, right: 5),
+            padding: EdgeInsets.only(left: 0, right: 0),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: categories.length + 1,
               itemBuilder: (BuildContext context, int index) {
                 if (index == 0) {
-                  return SizedBox(width: 20.0);
+                  return SizedBox(width: 8.0);
                 }
                 return RepoCard(
                   index - 1,
