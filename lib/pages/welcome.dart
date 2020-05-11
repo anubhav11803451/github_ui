@@ -43,8 +43,8 @@ class _WelcomePageState extends State<WelcomePage> {
 
   Widget _icon() {
     return Image.asset(
-      'assets/logo/github.png',
-      height: 120,
+      'assets/logo/github7.png',
+      height: 100,
     );
   }
 
