@@ -40,7 +40,7 @@ class HomeBody extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'GitHub\nHey Anubhav :)',
+                    'Home',
                     style: GoogleFonts.openSans(
                         color: Colors.white,
                         fontWeight: FontWeight.w900,
