@@ -74,10 +74,10 @@ class _SignUpPageState extends State<SignUpPage> {
         borderRadius: BorderRadius.all(Radius.circular(28)),
         boxShadow: <BoxShadow>[
           BoxShadow(
-            color: Colors.grey.shade200,
-            offset: Offset(0, 4),
-            blurRadius: 5,
-            spreadRadius: 1,
+            color: Colors.black38,
+            offset: Offset(0, 7),
+            blurRadius: 8,
+            spreadRadius: -1,
           ),
         ],
         gradient: LinearGradient(
