@@ -14,15 +14,15 @@ class Backbutton extends StatelessWidget {
             Container(
               padding: EdgeInsets.only(left: 0, top: 10, bottom: 10),
               child: Icon(
-                Icons.keyboard_arrow_left,
+                Icons.arrow_back,
                 color: Colors.black,
-                size: 40,
+                size: 28,
               ),
             ),
-            Text(
-              'Back',
-              style: TextStyle(fontSize: 13, fontWeight: FontWeight.w500),
-            ),
+            // Text(
+            //   'Back',
+            //   style: TextStyle(fontSize: 13, fontWeight: FontWeight.w500),
+            // ),
           ],
         ),
       ),
