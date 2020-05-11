@@ -9,7 +9,7 @@ class Splashscreen extends StatelessWidget {
     return SplashScreen(
       seconds: 4,
       navigateAfterSeconds: new WelcomePage(),
-      image: new Image.asset('assets/logo/github4.png'),
+      image: new Image.asset('assets/logo/github8.png'),
       backgroundColor: Colors.white,
       loaderColor: Colors.black,
       photoSize: 55,
