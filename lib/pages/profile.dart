@@ -15,7 +15,6 @@ class ProfileBody extends StatefulWidget {
 
 class _ProfileBodyState extends State<ProfileBody>
     with SingleTickerProviderStateMixin {
-
   TabController _tabController;
   // final DateFormat _dateFormatter = DateFormat('dd MMM');
   // final DateFormat _timeFormatter = DateFormat('h:mm');
@@ -26,7 +25,6 @@ class _ProfileBodyState extends State<ProfileBody>
     _tabController = TabController(initialIndex: 0, length: 3, vsync: this);
   }
 
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,6 +48,36 @@ class _ProfileBodyState extends State<ProfileBody>
               ],
             ),
           ),
+          ListBody(
+            children: <Widget>[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    Icons.place,
+                    color: Colors.black45,
+                  ),
+                  Text(
+                    'Gorakhpur,India',
+                    style: GoogleFonts.openSans(color: Colors.black54),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    Icons.link,
+                    color: Colors.black45,
+                  ),
+                  Text(
+                    '\thttps://linkedin.com/anubhav_11803451',
+                    style: GoogleFonts.openSans(color: Colors.black45),
+                  ),
+                ],
+              ),
+            ],
+          ),
           SizedBox(height: 10.0),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 35.5),
@@ -57,8 +85,9 @@ class _ProfileBodyState extends State<ProfileBody>
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 SizedBox(width: 1.0),
+                // Icon(Icons.),
                 Text(
-                  'Popular',
+                  'Pinned',
                   style: GoogleFonts.openSans(
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold,
