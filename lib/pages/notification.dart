@@ -15,10 +15,10 @@ class NotificationBody extends StatelessWidget {
               children: <Widget>[
                 IconButton(
                     icon: Icon(
-                      Icons.inbox,
-                      // color: Colors.black,
+                      Icons.filter_list,
+                      color: Colors.blueAccent,
                     ),
-                    onPressed: () {})
+                    onPressed: () {}),
               ],
             ),
           )
@@ -32,13 +32,38 @@ class NotificationBody extends StatelessWidget {
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Colors.black),
       ),
-      body: SafeArea(
-        child: Container(
-          height: size.height,
-          decoration: BoxDecoration(
-            color: Colors.black,
+      body: Stack(
+        children: <Widget>[
+          Container(
+            height: size.height,
+            decoration: BoxDecoration(
+              color: Colors.black,
+            ),
           ),
-        ),
+          ListView(
+            children: <Widget>[
+              
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 80),
+              child: Column(
+                // mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  SizedBox(height: 50,),
+                  Text(
+                    'All caught up!',
+                    style: GoogleFonts.openSans(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+        ],
+          ),
+        ],
       ),
     );
   }
